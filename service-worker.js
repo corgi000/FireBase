@@ -9,6 +9,13 @@ self.addEventListener('push', function(event) {
   var icon = 'ics_logo_512x512.png';
   var tag = 'simple-push-demo-notification-tag';
 
+  console.log('receive Data: ', event.data);
+  if (event.data != null) {
+      var textdata = event.data.text();
+      console.log('receive text: ', textdata);
+      body = body + ":" + textdata;
+  }
+  
   event.waitUntil(
     self.registration.showNotification(title, {
       body: body,
