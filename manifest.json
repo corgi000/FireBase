@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "/demo/push/non-data/images/icon-192x192.png",
-      "sizes": "192x192"
+      "sizes": "32x32"
     }
   ],
   "start_url": "./index.html",
